@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="test.dao.UserMapper">
+
+	<select id="getUser" resultType="test.bean.User">
+		select * from user where id = #{id}
+	</select>
+	
+	<select id="getAll" resultType="test.bean.User">
+		select * from user
+	</select>
+	
+	<update id="updateUser">
+		update user set name = '张三2' where id = #{id}
+	</update>
+	
+</mapper>
