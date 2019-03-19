@@ -2,13 +2,13 @@
 手写迷你mybatis框架，里面使用了mybatis设计模式和框架
 手写思路和框架图详细解释：https://blog.csdn.net/kuailebuzhidao/article/details/88355236
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 正文 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+###################### 正文 #######################################
 继上篇手写spring后（https://blog.csdn.net/kuailebuzhidao/article/details/87869279），感觉有必要继续把mybatis框架也手写出来，供深入理解。
 
 网上已经有很多手写框架的博客，但是很多只是按照mybatis流程，面向过程地写：解析xml->代理反射mapper->调用JDBC获取结果。虽然这样理解是对的，但是失去了理解mybatis源码意义。我遵循mybatis源码整体框架和设计，使用源码包名和类名，配合工厂模式和代理模式，写了精简版的mybatis框架。能看懂我这个minmybatis，就能更加容易地理解庞大的源码体系。手写框架的源码已经上传到github上，欢迎下载点星，感谢！
 github地址：https://github.com/SeasonPanPan/myspring
 
-先看以下spring源码中的类关系图：https://img-blog.csdnimg.cn/20190308172750828.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2t1YWlsZWJ1emhpZGFv,size_16,color_FFFFFF,t_70
+先看以下spring源码中的类关系图：(CSDN原地址查看)
 
 这个图很清晰地画出了mybatis重要组件类和流程：
 
